@@ -1,0 +1,32 @@
+[
+    {
+        "id": 104,
+        "slug": "ai-design-paradigm",
+        "title": "The AI Design Paradigm",
+        "date": "Oct 12, 2025",
+        "category": "Design",
+        "tags": ["AI", "UX", "Future"],
+        "excerpt": "How generative interfaces are shifting us from command-based UI to intent-based UI.",
+        "content": "We are witnessing a shift. \n\nFor the last 30 years, we have designed interfaces based on direct manipulation. You click a button, a thing happens. \n\nGenerative UI changes this. Now, you state an intent, and the interface constructs itself to meet that intent. This is the dawn of the 'Liquid Interface'."
+    },
+    {
+        "id": 103,
+        "slug": "quiet-web",
+        "title": "Return of the Quiet Web",
+        "date": "Oct 05, 2025",
+        "category": "Culture",
+        "tags": ["Internet", "Slow Web"],
+        "excerpt": "Why specialized, smaller communities are defeating the algorithmic feeds.",
+        "content": "The algos are loud. \n\nBut look closely at the data. Discord servers, group chats, and newsletters are growing faster than public feeds. We are retreating to cozy corners."
+    },
+    {
+        "id": 102,
+        "slug": "rust-in-production",
+        "title": "Rust is Boring Now",
+        "date": "Sep 28, 2025",
+        "category": "Tech",
+        "tags": ["Dev", "Rust"],
+        "excerpt": "And that is exactly why it is winning the infrastructure war.",
+        "content": "Boring is good. Boring means stable. Boring means the hype cycle is over and the productivity cycle has begun."
+    }
+]
