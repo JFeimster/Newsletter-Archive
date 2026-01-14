@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sunday Signal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="container nav-flex">
+            <a href="index.html" class="brand-wordmark">The Sunday Signal</a>
+            <div class="nav-links">
+                <a href="archive.html">Archive</a>
+                <a href="about.html">About</a>
+                <button class="btn btn-primary" onclick="openSubscribe()">Subscribe</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="container text-center">
+                <h1 class="hero-title">Signals in the noise.</h1>
+                <p class="hero-subtitle">Decoding tech, culture, and design every Sunday.</p>
+                <div class="subscribe-wrapper">
+                    <form class="inline-form" onsubmit="handleSubscribe(event)">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Join Free</button>
+                    </form>
+                    <p class="tiny-text">Join 12,000+ curious minds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest Signal</h2>
+                    <a href="archive.html" class="link-arrow">View All</a>
+                </div>
+                <div id="latest-issue-container" class="bento-grid-single">
+                    </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Curated Frequencies</h2>
+                </div>
+                <div id="collections-container" class="bento-grid-3">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer-container">
+        </footer>
+
+    <div id="subscribe-modal" class="modal hidden">
+        <div class="modal-content bento-card">
+            <span class="close-btn" onclick="closeSubscribe()">&times;</span>
+            <h3>Get the Signal</h3>
+            <p>Weekly insights, directly to your inbox.</p>
+            <form class="stack-form" onsubmit="handleSubscribe(event)">
+                <input type="email" placeholder="Email" required>
+                <button class="btn btn-primary full-width">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
