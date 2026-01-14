@@ -1,0 +1,5 @@
+[
+    { "id": 1, "title": "Deep Dives", "count": 12, "image": "assets/images/abstract-1.jpg" },
+    { "id": 2, "title": "Toolbox", "count": 5, "image": "assets/images/abstract-2.jpg" },
+    { "id": 3, "title": "Interviews", "count": 8, "image": "assets/images/abstract-3.jpg" }
+]
