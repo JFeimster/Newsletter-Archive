@@ -1,0 +1,6 @@
+.text-center { text-align: center; }
+.bento-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-md); }
+.bento-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: var(--space-md); }
+.full-width { width: 100%; }
+.loading-pulse { color: var(--text-muted); font-family: var(--font-serif); font-size: 1.5rem; text-align: center; margin: 4rem 0; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
