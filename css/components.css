@@ -1,0 +1,74 @@
+/* Bento Cards */
+.bento-card {
+    background: var(--bg-card);
+    border: var(--border-hairline);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.bento-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--text-muted);
+    box-shadow: var(--glow);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+.btn-primary {
+    background: var(--text-accent);
+    color: white;
+}
+.btn-primary:hover { opacity: 0.9; }
+
+/* Forms */
+.inline-form { display: flex; gap: var(--space-sm); justify-content: center; }
+.inline-form input {
+    padding: 0.75rem;
+    background: var(--bg-subtle);
+    border: var(--border-hairline);
+    color: var(--text-main);
+    border-radius: var(--radius-sm);
+    min-width: 300px;
+}
+.stack-form { display: flex; flex-direction: column; gap: var(--space-sm); }
+.stack-form input {
+    padding: 1rem;
+    background: var(--bg-subtle);
+    border: var(--border-hairline);
+    color: var(--text-main);
+}
+
+/* Chips */
+.filter-chip {
+    background: transparent;
+    border: var(--border-hairline);
+    color: var(--text-muted);
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.filter-chip.active, .filter-chip:hover {
+    border-color: var(--text-accent);
+    color: var(--text-accent);
+}
+
+/* Modal */
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 1000;
+}
+.modal.hidden { display: none; }
+.modal-content { width: 100%; max-width: 400px; position: relative; }
+.close-btn {
+    position: absolute; top: 10px; right: 15px;
+    font-size: 1.5rem; cursor: pointer;
+}
