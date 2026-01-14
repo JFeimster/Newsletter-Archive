@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue | The Sunday Signal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="nav-bar" id="nav-container"></nav> <main class="container article-layout">
+        <div id="issue-content">
+            <div class="loading-pulse">Loading Signal...</div>
+        </div>
+        
+        <div class="article-cta bento-card">
+            <h3>Enjoyed this signal?</h3>
+            <p>Don't miss the next one.</p>
+            <button class="btn btn-primary" onclick="openSubscribe()">Subscribe Free</button>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="footer-container"></footer>
+    
+    <div id="subscribe-modal" class="modal hidden">
+         <div class="modal-content bento-card">
+            <span class="close-btn" onclick="closeSubscribe()">&times;</span>
+            <h3>Get the Signal</h3>
+            <form class="stack-form" onsubmit="handleSubscribe(event)">
+                <input type="email" placeholder="Email" required>
+                <button class="btn btn-primary full-width">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
